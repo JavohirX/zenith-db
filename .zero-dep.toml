@@ -1,0 +1,34 @@
+[project]
+name = "ZenithDB"
+version = "1.0.0"
+track = "D"
+track_name = "Data & Storage"
+tagline = "ACID-compliant LSM-Tree KV store, BM25 full-text engine, vector similarity search, and Redis/HTTP servers in 100% pure standard library."
+language = "python"
+runtime = "Python >= 3.8"
+entrypoint = "zenith.py"
+license = "MIT"
+
+[bonuses]
+single_file = true
+reproducible_build = true
+package_killer = true
+stdlib_log = true
+
+[substitutions]
+count = 13
+packages = [
+  "redis / redis-py",
+  "rocksdb / leveldb",
+  "sqlite3 / duckdb (document query layer)",
+  "whoosh / elasticsearch (BM25 full-text)",
+  "chromadb / faiss (vector cosine/euclidean search)",
+  "rich / colorama (terminal UI and ANSI styling)",
+  "tabulate (terminal table formatter)",
+  "tqdm (terminal progress bars and spinners)",
+  "click / typer (CLI argument parsing and commands)",
+  "pytest (test discovery, assertions, and runner)",
+  "fastapi / flask (HTTP REST API and web dashboard)",
+  "pydantic (schema validation and serialization)",
+  "python-dotenv (environment and config loader)"
+]

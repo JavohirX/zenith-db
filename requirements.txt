@@ -1,0 +1,3 @@
+# ZenithDB is 100% Zero-Dependency.
+# Shipped dependency manifest is completely empty.
+# All capabilities use Python standard library only (Python >= 3.8).
